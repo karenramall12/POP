@@ -37,7 +37,28 @@ h1, h2, h3 {
     padding: 15px;
     margin: 10px 0;
     position: relative;
-    min-height: 50px; /* Espaço para o botão */
+    min-height: 50px;
+}
+
+.mensagem-whatsapp p {
+    font-size: 13px;         /* Fonte menor */
+    line-height: 1.4;        /* Espaçamento entre linhas reduzido */
+    white-space: pre-line;   /* Mantém as quebras de linha */
+    margin-top: 25px;        /* Espaço para o botão */
+    color: #303030;          /* Cor mais escura para melhor legibilidade */
+}
+
+.mensagem-whatsapp pre {
+    font-size: 13px;
+    font-family: inherit;    /* Usa a mesma fonte do parágrafo */
+    margin: 0;
+    white-space: pre-line;
+}
+
+/* Para textos ainda menores como informações adicionais */
+.mensagem-whatsapp .texto-pequeno {
+    font-size: 12px;
+    color: #666;
 }
 
 .botao-copiar {
@@ -60,12 +81,6 @@ h1, h2, h3 {
 
 .botao-copiar.copiado {
     background-color: #34B7F1;
-}
-
-.mensagem-whatsapp p {
-    white-space: pre-line;
-    line-height: 1.5;
-    margin-top: 25px; /* Espaço para o botão não sobrepor o texto */
 }
 
 img {
@@ -97,4 +112,23 @@ p {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
+}
+
+.imagem-container {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.imagem-container img {
+    width: 450px;  /* Largura fixa para todas as imagens */
+    height: auto;  /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo específico para imagem deitada */
+.imagem-deitada {
+    transform: rotate(-90deg); /* Gira a imagem */
+    transform-origin: center;
+    margin: 100px 0; /* Espaço extra para compensar a rotação */
 }
