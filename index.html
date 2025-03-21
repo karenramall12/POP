@@ -4,96 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        body {
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        h1, h2, h3 {
-            margin: 15px 0;
-            color: #075E54;
-        }
-        
-        .passos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .passos > div {
-            background-color: #DCF8C6;
-            padding: 10px;
-            border-radius: 10px;
-            flex: 1;
-            min-width: 200px;
-        }
-        
-        .mensagem-whatsapp {
-            background-color: #DCF8C6;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 15px;
-            position: relative;
-        }
-        
-        .botao-copiar {
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            background-color: #075E54;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            font-size: 12px;
-            cursor: pointer;
-        }
-        
-        .botao-copiar:hover {
-            background-color: #128C7E;
-        }
-        
-        img {
-            max-width: 300px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-        }
-        
-        .legenda {
-            font-size: 14px;
-            font-style: italic;
-            margin-top: 5px;
-            color: #666;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
-        
-        #informacoes-relevantes {
-            margin-top: 20px;
-        }
-        
-        .botoes-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Pop</h1>
@@ -162,6 +73,7 @@
             <p id="mensagem-2">   <button class="botao-copiar" onclick="copiarTexto('mensagem-2')">Copiar</button>
 *Informações Relevantes* 
 Cumprimos rigorosamente os protocolos exigidos pela LGPD. 
+
 *NÃO SERVIMOS CAFÉ DA MANHÃ* 
 * Nossa pousada disponibiliza *SECADOR & FERO DE PASSAR ROUPA*, apenas uma 
 unidade de cada e são de uso coletivo, retirados e devolvidos junto à recepção.  
@@ -276,6 +188,9 @@ Gratos pela compreensão
         
         <div class="imagem-container">
             <img src="imagem/orçamento.jpg" alt="Exemplo de orçamento">
+            <p class="legenda">
+                não esquecer de apagar o número do quarto,
+            </p>
         </div>
         
         <h3>Enviar esta mensagem logo após o recorte do orçamento</h3>
