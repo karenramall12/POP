@@ -113,22 +113,3 @@ p {
     gap: 10px;
     margin-top: 10px;
 }
-
-.imagem-container {
-    margin: 15px 0;
-    text-align: center;
-}
-
-.imagem-container img {
-    width: 450px;  /* Largura fixa para todas as imagens */
-    height: auto;  /* Mantém a proporção da imagem */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Estilo específico para imagem deitada */
-.imagem-deitada {
-    transform: rotate(-90deg); /* Gira a imagem */
-    transform-origin: center;
-    margin: 100px 0; /* Espaço extra para compensar a rotação */
-}
