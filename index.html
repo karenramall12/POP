@@ -48,146 +48,163 @@
 
             <p class="legenda"> Lembre-se de deixar todos os check-in do dia desta forma</p>
 
-            <div class="imagem-container">
+            <div class="imagem">
                 <img src="imagem/che.jpg" alt="Exemplo de check-in">
             </div>
            
         </div>
 
         <h1>Hóspede quer fazer um orçamento</h1>
-        <h3>
-            Primeira mensagem a ser enviada
-        </h3>
 
-        <div class="mensagem-whatsapp">
-            <p id="mensagem-1">
-                Para que possamos informar com exatidão os valores de nossa hospedagem, por favor informe:
-                * De qual data completa (Check in e horário previsto para chegada)?
-                * Até qual data completa (check out, lembrando que se encerra as 11 da manhã ok)? 
-                * Para quantas pessoas?
-                * Há crianças na reserva? Se sim, por gentileza já informe a idade.
-                * Preferência por disposição das camas? Ex.: Casal ou solteiro 
-                * E caso tenha alguma especificidade, nos informe, por gentileza.
-            </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-1')">Copiar</button>
-        </div>
-    
-        <h3>Próxima mensagem a ser enviada (Enviar uma após a outra sem hesitar)</h3>
+        <div class="grid-mensagens">
+            <!-- Primeira mensagem -->
+            <div class="mensagem-whatsapp">
+                <button onclick="copiarTexto('1')" id="botao-1" class="botao-copiar">Copiar</button>
+                <p id="mensagem-1">
+                    Para que possamos informar com exatidão os valores de nossa hospedagem, por favor informe:
+                    * De qual data completa (Check in e horário previsto para chegada)?
+                    * Até qual data completa (check out, lembrando que se encerra as 11 da manhã ok)? 
+                    * Para quantas pessoas?
+                    * Há crianças na reserva? Se sim, por gentileza já informe a idade.
+                    * Preferência por disposição das camas? Ex.: Casal ou solteiro 
+                    * E caso tenha alguma especificidade, nos informe, por gentileza.
+                </p>
+            </div>
+
+            <!-- Segunda mensagem -->
+            <div class="mensagem-whatsapp">
+                <button onclick="copiarTexto('2')" id="botao-2" class="botao-copiar">Copiar</button>
+                <p id="mensagem-2">
+                    *Informações Relevantes* 
+                    Cumprimos rigorosamente os protocolos exigidos pela LGPD. 
+
+                    *NÃO SERVIMOS CAFÉ DA MANHÃ* 
+                    * Nossa pousada disponibiliza *SECADOR & FERO DE PASSAR ROUPA*, apenas uma 
+                    unidade de cada e são de uso coletivo, retirados e devolvidos junto à recepção.  
+                    * Prazo de cancelamento e alterações até 72h antes do horário de check in às 14h no dia da 
+                    primeira estada conosco para obter o direito a reembolso. 
+                    * *O estacionamento não está incluso no valor da hospedagem.* O que indicamos é coberto e 
+                    com manobrista é um serviço terceirizado e opcional, com funcionamento 24 
+                    horas. Está localizado à menos de 100 metros da pousada: *Rua Apeninos 1070* e, 
+                    recomendamos que consulte/confirme as regras, os horários e valor da diária direto com o 
+                    estacionamento. O valor da diária atual é a partir de R$ 30,00 e, o procedimento para 
+                    obtenção de desconto é: Primeiro estacione o veículo, lá eles entregarão um canhoto o qual 
+                    aciona o desconto do convênio mediante o carimbar do ticket na recepção da pousada. Para 
+                    maiores detalhes por gentileza entrar em ctt diretamente pelo whatsapp 11916331875 
+                    KPARK ESTACIONAMENTO. 
+                    * A farmácia mais próxima que temos daqui é a ultrafarma na Rua Apeninos, 1025 a 1 
+                    minuto caminhando o whatsapp de atendimento é 11978547780. 
+                    * Não trabalhamos com arrumação diária* Caso necessite, a mesma deve ser solicitada para o 
+                    terceiro dia de vossa hospedagem junto à recepção. 
+                    * Não trabalhamos com adição de cama extra, colchonetes no chão e nem day use. 
+                    * Amamos os animais, porém não temos estrutura para hospedá-los. 
+                    * Estamos localizados à 3 minutos caminhando da estação de metrô Paraíso. Caso venha de 
+                    metrô, observe que: A saída mais conveniente que dá acesso à pousada fica cito à Rua Dr. 
+                    Eduardo Amaro - *metrô paraíso*. 
+                    * *Check in é a partir das 14hrs até as 22h* Caso precise chegar em horários diferentes 
+                    solicite informação sobre. 
+                    * *Check out é até as 11hrs em ponto*. Caso saia entre 11h01 e 13h30 será cobrado o valor 
+                    de 50% da diária correspondente a última diária de vossa reserva, após as 13h30 será cobrado 
+                    o valor de 100% da mesma. Importante colocar que, caso precise deste tempo e já saiba 
+                    previamente que sairá dentro deste período estendido ou além, favor nos informar para 
+                    averiguarmos a disponibilidade do serviço adicional, pois muitas vezes, como estamos 
+                    lotados, não conseguimos a concessão. 
+                    * Nossa estrutura possuí três andares e não possuí elevador, nem berços. * Não dispomos de 
+                    serviços de mensageiros, com isso solicitamos que façam a gestão de vossas bagagens. 
+                    * Lavanderia (whastapp) apenas indicação, para maiores detalhes 11 991236954. 
+                    * Visitantes *não são permitidos* e caso em qualquer momento seja identificado será 
+                    cobrado o valor de R$50,00 por pessoa e visita como penalidade. Caso saiba e queira receber 
+                    alguém orientamos que efetue a reserva para a quantidade exata de pessoas que deseja que 
+                    entre no quarto e nos avise previamente para inclusão da pessoa como hóspede em vossa 
+                    reserva, documentos são solicitados para segurança de todos os hospedados em nossa 
+                    pousada. Ressaltamos ainda que nosso ambiente é familiar e prenuncia o bem-estar e 
+                    segurança de todos. 
+                    * Para emissão de nota fiscal se faz necessário o envio do endereço completo do solicitante. 
+                    Caso seja em nome da empresa favor enviar o espelho do CNPJ. 
+                    * Vossa hospedagem contempla roupa de cama (incluindo coberta) e banho (toalha) além de 
+                    amenities (sabonete/sashê banho) 
+                    * Todos os quartos para família, contém beliche. E caso o ar condicionado de alguma suíte 
+                    entre em manutenção de forma inesperada, será substituído por ventilador. 
+                    * Caso efetue algum pedido por IFOOD ou similares por gentileza nos avise pelo whatsapp 
+                    em nome de quem está e a previsão de chegada, bem como o código para que o entregador 
+                    possa deixa-lo, assim lhe avisamos pelo whatsapp quando chegar e você poderá retirá-lo em 
+                    nosso balcão da recepção em seu tempo. Caso precise usar o micro-ondas, o mesmo se 
+                    encontra em nossa 'cozinheta' que fica no térreo, lado esquerdo no final do corredor. 
+                    * O valor de cada água disposta no frigobar é R$ 4,00 e cada refrigerante R$ 5,00. Em caso 
+                    de perda da chave única disponibilizada no período de vossa hospedagem será cobrado o 
+                    valor de R$ 50,00 para reposição da mesma. 
+                    * De acordo com as regras internas da Pousada que estão fixadas atrás das portas dos quartos, 
+                    as tomadas do Ar Condicionado são para uso EXCLUSIVO do Ar Condicionado. Eventuais 
+                    problemas causados pelo mau uso serão cobrados, portanto solicitamos, a Gentileza, que ao 
+                    chegar em sua suíte visualize a lâmina de normas de bom convívio que se encontra anexada 
+                    na parte de dentro da porta principal do quarto. * Atente-se: A tecnologia usada nas 
+                    fechaduras de nossas portas permite que, uma vez dentro da suíte, para trancá-la, basta apenas 
+                    encostá-la. Só quem tem a senha eletrônica e/ou a chave física pode abri-la pelo lado de fora 
+                    ok?! 
+                    🤓🤓🤓
+                    . 
+                    *Informações para utilizar a internet* Conectar em REDE: Pousada Bonita 
+                    SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
+                    🤓
+                    )
+                </p>
+            </div>
+
+            <!-- Terceira mensagem -->
+            <div class="mensagem-whatsapp">
+                <button onclick="copiarTexto('3')" id="botao-3" class="botao-copiar">Copiar</button>
+                <p id="mensagem-3">
+                    📍 *Pousada Bonita e Hotel*
+
+                    📌 Localização:
+                    Rua Correia Dias, 368
+                    Vila Mariana - São Paulo/SP
+                    CEP: 04104-001
                     
-        <div class="mensagem-whatsapp">
-            <p id="mensagem-2">   <button class="botao-copiar" onclick="copiarTexto('mensagem-2')">Copiar</button>
-*Informações Relevantes* 
-Cumprimos rigorosamente os protocolos exigidos pela LGPD. 
+                    🚇 Acesso:
+                    • 3 min a pé do Metrô Paraíso
+                    • Saída mais próxima: Rua Dr. Eduardo Amaro
+                    
+                    📲 Google Maps:
+                    https://maps.app.goo.gl/[seu-link-aqui]
+                    
+                    🚗 Estacionamento mais próximo:
+                    Rua Apeninos, 1070 (100m da pousada)
+                    
+                    ⭐ Pontos de referência:
+                    • Estação Paraíso do Metrô
+                    • Hospital Santa Cruz
+                    • Rua Vergueiro
+                </p>
+            </div>
 
-*NÃO SERVIMOS CAFÉ DA MANHÃ* 
-* Nossa pousada disponibiliza *SECADOR & FERO DE PASSAR ROUPA*, apenas uma 
-unidade de cada e são de uso coletivo, retirados e devolvidos junto à recepção.  
-* Prazo de cancelamento e alterações até 72h antes do horário de check in às 14h no dia da 
-primeira estada conosco para obter o direito a reembolso. 
-* *O estacionamento não está incluso no valor da hospedagem.* O que indicamos é coberto e 
-com manobrista é um serviço terceirizado e opcional, com funcionamento 24 
-horas. Está localizado à menos de 100 metros da pousada: *Rua Apeninos 1070* e, 
-recomendamos que consulte/confirme as regras, os horários e valor da diária direto com o 
-estacionamento. O valor da diária atual é a partir de R$ 30,00 e, o procedimento para 
-obtenção de desconto é: Primeiro estacione o veículo, lá eles entregarão um canhoto o qual 
-aciona o desconto do convênio mediante o carimbar do ticket na recepção da pousada. Para 
-maiores detalhes por gentileza entrar em ctt diretamente pelo whatsapp 11916331875 
-KPARK ESTACIONAMENTO. 
-* A farmácia mais próxima que temos daqui é a ultrafarma na Rua Apeninos, 1025 a 1 
-minuto caminhando o whatsapp de atendimento é 11978547780. 
-* Não trabalhamos com arrumação diária* Caso necessite, a mesma deve ser solicitada para o 
-terceiro dia de vossa hospedagem junto à recepção. 
-* Não trabalhamos com adição de cama extra, colchonetes no chão e nem day use. 
-* Amamos os animais, porém não temos estrutura para hospedá-los. 
-* Estamos localizados à 3 minutos caminhando da estação de metrô Paraíso. Caso venha de 
-metrô, observe que: A saída mais conveniente que dá acesso à pousada fica cito à Rua Dr. 
-Eduardo Amaro - *metrô paraíso*. 
-* *Check in é a partir das 14hrs até as 22h* Caso precise chegar em horários diferentes 
-solicite informação sobre. 
-* *Check out é até as 11hrs em ponto*. Caso saia entre 11h01 e 13h30 será cobrado o valor 
-de 50% da diária correspondente a última diária de vossa reserva, após as 13h30 será cobrado 
-o valor de 100% da mesma. Importante colocar que, caso precise deste tempo e já saiba 
-previamente que sairá dentro deste período estendido ou além, favor nos informar para 
-averiguarmos a disponibilidade do serviço adicional, pois muitas vezes, como estamos 
-lotados, não conseguimos a concessão. 
-* Nossa estrutura possuí três andares e não possuí elevador, nem berços. * Não dispomos de 
-serviços de mensageiros, com isso solicitamos que façam a gestão de vossas bagagens. 
-* Lavanderia (whastapp) apenas indicação, para maiores detalhes 11 991236954. 
-* Visitantes *não são permitidos* e caso em qualquer momento seja identificado será 
-cobrado o valor de R$50,00 por pessoa e visita como penalidade. Caso saiba e queira receber 
-alguém orientamos que efetue a reserva para a quantidade exata de pessoas que deseja que 
-entre no quarto e nos avise previamente para inclusão da pessoa como hóspede em vossa 
-reserva, documentos são solicitados para segurança de todos os hospedados em nossa 
-pousada. Ressaltamos ainda que nosso ambiente é familiar e prenuncia o bem-estar e 
-segurança de todos. 
-* Para emissão de nota fiscal se faz necessário o envio do endereço completo do solicitante. 
-Caso seja em nome da empresa favor enviar o espelho do CNPJ. 
-* Vossa hospedagem contempla roupa de cama (incluindo coberta) e banho (toalha) além de 
-amenities (sabonete/sashê banho) 
-* Todos os quartos para família, contém beliche. E caso o ar condicionado de alguma suíte 
-entre em manutenção de forma inesperada, será substituído por ventilador. 
-* Caso efetue algum pedido por IFOOD ou similares por gentileza nos avise pelo whatsapp 
-em nome de quem está e a previsão de chegada, bem como o código para que o entregador 
-possa deixa-lo, assim lhe avisamos pelo whatsapp quando chegar e você poderá retirá-lo em 
-nosso balcão da recepção em seu tempo. Caso precise usar o micro-ondas, o mesmo se 
-encontra em nossa 'cozinheta' que fica no térreo, lado esquerdo no final do corredor. 
-* O valor de cada água disposta no frigobar é R$ 4,00 e cada refrigerante R$ 5,00. Em caso 
-de perda da chave única disponibilizada no período de vossa hospedagem será cobrado o 
-valor de R$ 50,00 para reposição da mesma. 
-* De acordo com as regras internas da Pousada que estão fixadas atrás das portas dos quartos, 
-as tomadas do Ar Condicionado são para uso EXCLUSIVO do Ar Condicionado. Eventuais 
-problemas causados pelo mau uso serão cobrados, portanto solicitamos, a Gentileza, que ao 
-chegar em sua suíte visualize a lâmina de normas de bom convívio que se encontra anexada 
-na parte de dentro da porta principal do quarto. * Atente-se: A tecnologia usada nas 
-fechaduras de nossas portas permite que, uma vez dentro da suíte, para trancá-la, basta apenas 
-encostá-la. Só quem tem a senha eletrônica e/ou a chave física pode abri-la pelo lado de fora 
-ok?! 
-🤓🤓🤓
- . 
-*Informações para utilizar a internet* Conectar em REDE: Pousada Bonita 
-SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
-🤓
-)
-            </p>
-         
+            <!-- Quarta mensagem -->
+            <div class="mensagem-whatsapp">
+                <button onclick="copiarTexto('4')" id="botao-4" class="botao-copiar">Copiar</button>
+                <p id="mensagem-4">
+                    *FORMAS DE PAGAMENTO*
+
+                    Não trabalhamos com link de pagamento, tão pouco dividimos valores em cartão de crédito e não faturamos para empresas
+                    CHAVE PIX: CNPJ: 14.313.731/0001-00
+                    DADOS BANCÁRIOS:
+                    Banco Santander - nº 033
+                    Agência 4790 - São Paulo
+                    Conta corrente - 130036661
+                    Favorecido: Pousada Bonita Ltda. ME
+                    CNPJ: 14.313.731/0001-00
+                    Como garantia da sua reserva solicitamos o pagamento antecipado em 100% irrevogavelmente, após a transferência por gentileza enviar o comprovante à este canal
+                    Atenção! 🚨🚨
+                    Precisa ser informado com no mínimo 72h antes de seu check in
+                    Caso queira alterar ou cancelar com direito ao reembolso total. Combinado?!
+                    Após o envio do comprovante bancário.
+                    Encaminharemos o mesmo para o departamento administrativo que confirmará o recebimento dentro do horário comercial.
+                    Tão logo nos sinalizem, confirmaremos a reserva através deste canal 🤓🤓
+                    Gratos pela compreensão
+                </p>
+            </div>
         </div>
 
-        <h3>Próxima mensagem a ser enviada (Enviar uma após a outra sem hesitar)</h3>
         
-        <div class="mensagem-whatsapp">
-            <p id="mensagem-3">
-Pousada Bonita e Hotel
-https://maps.google.com/maps/search/Pousada%20Bonita%20e%20Hotel/@-30.0175,-21.1694,17z?hl=pt-BR
-Rua Correia Dias 368, 041040001 São Paulo, SP
-            </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-3')">Copiar</button>
-        </div>
-
-        <h3>Próxima mensagem a ser enviada (Enviar uma após a outra sem hesitar)</h3>
-
-        <div class="mensagem-whatsapp">
-            <p id="mensagem-4">
-*FORMAS DE PAGAMENTO*
-
-Não trabalhamos com link de pagamento, tão pouco dividimos valores em cartão de crédito e não faturamos para empresas
-CHAVE PIX: CNPJ: 14.313.731/0001-00
-DADOS BANCÁRIOS:
-Banco Santander - nº 033
-Agência 4790 - São Paulo
-Conta corrente - 130036661
-Favorecido: Pousada Bonita Ltda. ME
-CNPJ: 14.313.731/0001-00
-Como garantia da sua reserva solicitamos o pagamento antecipado em 100% irrevogavelmente, após a transferência por gentileza enviar o comprovante à este canal
-Atenção! 🚨🚨
-Precisa ser informado com no mínimo 72h antes de seu check in
-Caso queira alterar ou cancelar com direito ao reembolso total. Combinado?!
-Após o envio do comprovante bancário.
-Encaminharemos o mesmo para o departamento administrativo que confirmará o recebimento dentro do horário comercial.
-Tão logo nos sinalizem, confirmaremos a reserva através deste canal 🤓🤓
-Gratos pela compreensão
-            </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-4')">Copiar</button>
-
           
         </div>
         <h1> Cliente forneceu todos os dados necessários, <br>
@@ -195,14 +212,8 @@ Gratos pela compreensão
         <p></p>
         <h3> fazer o orçamento da reserva e enviar o recorte desta maneira:</h3>
         <div class="imagem-container">
-            <p class="legenda"> 
-                Lembre-se de apagar o número do quarto.
-                
-               
-                </p>
-
-            <div><img src="imagem/WhatsApp Image 2025-03-21 at 15.20.46.jpeg" alt="Exemplo de orçamento"></div>
-            
+            <p class="legenda">Lembre-se de apagar o número do quarto.</p>
+            <img src="imagem/WhatsApp Image 2025-03-21 at 15.20.46.jpeg" alt="Exemplo de orçamento">
         </div>
         
         <h1>Enviar esta mensagem Junto com o recorte</h1>
@@ -210,9 +221,10 @@ Gratos pela compreensão
             Lembre-se de alterar a data para a data vigente. <br>
             ( dia em que se está fazendo o orçamento)
             </p>
-            
+
+            <div class="grid-mensagens">
             <div class="mensagem-whatsapp">
-                <button onclick="copiarTexto('mensagem-8')" id="botao-5" class="botao-copiar">Copiar</button>
+                <button onclick="copiarTexto('8')" id="botao-8" class="botao-copiar">Copiar</button>
                 <p id="mensagem-8">
             Nosso orçamento é apenas informativo e não está sendo
             efetuada a reserva ao apresentá-lo.
@@ -221,9 +233,10 @@ Gratos pela compreensão
                 </p>
             </div>
 
-        <h3>Cliente quer fazer a reserva, enviar a próxima mensagem</h3>
+     
 
         <div class="mensagem-whatsapp">
+            <button onclick="copiarTexto('5')" id="botao-5" class="botao-copiar">Copiar</button>
             <p id="mensagem-5">
         Para reservar, informe por gentileza:
         * Nome completo de todos os hospedes;
@@ -231,27 +244,30 @@ Gratos pela compreensão
         * Data de nascimento de todos os hospedes;
         * E-mail (apenas do solicitante).
         * Whastapp de todos os hóspedes;
-        *Horário previsto para vossa chegada.
+        * Horário previsto para vossa chegada.
             </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-5')">Copiar</button>
+        </div>
         </div>
             
         <h3>Assim que cliente enviar TODOS os dados, fazer a reserva e enviar o recorte desta maneira:</h3>
         
         <div class="imagem-container">
+            <p class="legenda">Exemplo de reserva feita aguardando pagamento</p>
             <img src="imagem/reserva feita aguradando pagamentos.jpg" alt="Reserva feita aguardando pagamento">
         </div>
 
-        <h3>Logo abaixo da reserva já feita, enviar esta mensagem sem hesitar</h3>
-        
+        <h3>Logo abaixo da reserva já feita, enviar esta mensagem junto <br> 
+            com o recorte sem hesitar</h3>
+
+        <div class="grid-mensagens">
         <div class="mensagem-whatsapp">
+            <button onclick="copiarTexto('6')" id="botao-6" class="botao-copiar">Copiar</button>
             <p id="mensagem-6">
 *BLOQUEIO DE RESERVA*
 AGUARDANDO ATÉ AS 21h00 DE 21/03/25
 *Antes de efetuar o pagamento atente-se para as informações referentes à vossa reserva*
 *Visitantes caso entrem no quarto será cobrado o valor de R$ 50,00 por pessoa e visita.
-*Solicitamos que ao chegar em sua suíte visualize a lâmina de normas de bom convívio que se
-encontra anexada na parte de dentro da porta principal do quarto 🤓🤓🤓🤓
+*Solicitamos que ao chegar em sua suíte visualize a lâmina de normas de bom convívio que se encontra anexada na parte de dentro da porta principal do quarto 🤓🤓🤓🤓
 *Check in após as 14h até as 22h (onde a nossa recepção encerra as atividades)
 *Check out até as 11h
 *NÃO SERVIMOS CAFÉ DA MANHÃ*
@@ -283,7 +299,7 @@ do horário comercial.
 Tão logo nos sinalizem, confirmaremos a reserva através deste canal 🤓🤓
 Gratos pela compreensão
             </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-6')">Copiar</button>
+        </div>
         </div>
         
         <h3>Cliente enviou o comprovante de pagamento, enviar o comprovante no grupo de whatsapp do Bonita com a seguinte frase:</h3>
@@ -291,11 +307,10 @@ Gratos pela compreensão
             Lembre-se de trocar o número da reserva.
          </p>
         <div class="mensagem-whatsapp">
-           
+            <button onclick="copiarTexto('7')" id="botao-7" class="botao-copiar">Copiar</button>
             <p id="mensagem-7">Confirma por gentileza 🤓🙏🏻 Reserva #5625</p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-7')">Copiar</button>
         </div>
-        
+        </div> 
        
         <h1>
         Hóspede chegou na pousada para o check-in
@@ -363,44 +378,48 @@ Gratos pela compreensão
          </p>
         <img src="imagem/regulamento interno.jpeg" alt="">
 
-        <h3>Mensagens a serem enviadas</h3>
-
-        <div class="mensagem-whatsapp">
-            <p id="mensagem-9">
-                *Informações Relevantes*
-Cumprimos rigorosamente os protocolos exigidos pela LGPD.
-*NÃO SERVIMOS CAFÉ DA MANHÃ*
-* Prazo de cancelamento e alterações até 72h antes do horário de check in às 14h no dia da primeira estada conosco para obter o direito a reembolso.
-* *O estacionamento não está incluso no valor da hospedagem.* O que indicamos é coberto e com manobrista é um serviço terceirizado e opcional, com funcionamento 24
-horas. Está localizado a menos de 100 metros da pousada: Rua Apeninos 1070 e, recomendamos que consulte/confira as regras, os horários e o valor da diária direto com o estacionamento. O valor da diária atual é a partir de R$30,00 e, o procedimento para obtenção de desconto é: Primeiro estacione o veículo, lá eles entregarão um canhoto o qual aciona o desconto do convênio mediante o carimbar do ticket na recepção da pousada. Para maiores detalhes por gentileza entrar em ctt diretamente pelo whatsapp 11916331875 KPARK ESTACIONAMENTO.
-* A farmácia mais próxima que temos daqui é a ultrafarma na Rua Apeninos, 1025 a 1 minuto caminhando o whatsapp de atendimento é 11978547780.
-* Não trabalhamos com arrumação diária* Caso necessite, a mesma deve ser solicitada para o terceiro dia de vossa hospedagem junto à recepção.
-* Não trabalhamos com adição de cama extra, colchonetes no chão e nem day use.
-* Amamos os animais, porém não temos estrutura para hospedá-los.
-* Estamos localizados a 3 minutos caminhando da estação de metrô Paraíso. Caso venha de metrô, observe que: A saída mais conveniente que dá acesso à pousada fica sito à Rua Dr. Eduardo Amaro - metrô paraíso.
-* Check in é a partir das 14hrs até as 22h Caso precise chegar em horários diferentes solicite informação sobre.
-* Check out é até as 11 horas em ponto. Caso saia entre 11h01 e 14h00 será cobrado o valor de 50% da diária correspondente a última diária de vossa reserva, após as 14h será cobrado o valor de 100% da mesma. Importante colocar que, caso precise deste tempo e já saiba previamente que sairá dentro deste período estendido ou além, favor nos informar para averiguarmos a disponibilidade do serviço adicional, pois muitas vezes, como estamos lotados, não conseguimos a concessão.
+        <h3>Mensagens a serem enviadas
+            
+        </h3>
+        <p class="legenda">
+            Lembre-se de trocar o número da senha, colocando
+             a senha do quarto do hóspede
+         </p>
+        <div class="grid-mensagens">
+            <!-- Mensagem 9 -->
+            <div class="mensagem-whatsapp">
+                <button onclick="copiarTexto('9')" id="botao-9" class="botao-copiar">Copiar</button>
+                <p id="mensagem-9">
+                    *Informações Relevantes*
+                    Cumprimos rigorosamente os protocolos exigidos pela LGPD.
+                    *NÃO SERVIMOS CAFÉ DA MANHÃ*
+                    * Prazo de cancelamento e alterações até 72h antes do horário de check in às 14h no dia da primeira estada conosco para obter o direito a reembolso.
+                    * *O estacionamento não está incluso no valor da hospedagem.* O que indicamos é coberto e com manobrista é um serviço terceirizado e opcional, com funcionamento 24
+                    horas. Está localizado a menos de 100 metros da pousada: Rua Apeninos 1070 e, recomendamos que consulte/confira as regras, os horários e o valor da diária direto com o estacionamento. O valor da diária atual é a partir de R$30,00 e, o procedimento para obtenção de desconto é: Primeiro estacione o veículo, lá eles entregarão um canhoto o qual aciona o desconto do convênio mediante o carimbar do ticket na recepção da pousada. Para maiores detalhes por gentileza entrar em ctt diretamente pelo whatsapp 11916331875 KPARK ESTACIONAMENTO.
+                    * A farmácia mais próxima que temos daqui é a ultrafarma na Rua Apeninos, 1025 a 1 minuto caminhando o whatsapp de atendimento é 11978547780.
+                    * Não trabalhamos com arrumação diária* Caso necessite, a mesma deve ser solicitada para o terceiro dia de vossa hospedagem junto à recepção.
+                    * Não trabalhamos com adição de cama extra, colchonetes no chão e nem day use.
+                    * Amamos os animais, porém não temos estrutura para hospedá-los.
+                    * Estamos localizados a 3 minutos caminhando da estação de metrô Paraíso. Caso venha de metrô, observe que: A saída mais conveniente que dá acesso à pousada fica sito à Rua Dr. Eduardo Amaro - metrô paraíso.
+                    * Check in é a partir das 14hrs até as 22h Caso precise chegar em horários diferentes solicite informação sobre.
 * Nossa estrutura possui três andares e não possui elevador, nem berços. * Não dispomos de serviços de mensageiros, com isso solicitamos que façam a gestão de vossas bagagens.
 * Lavanderia (whastapp) apenas indicação, para maiores detalhes 11 991236954.
 * Visitantes não são permitidos e caso em qualquer momento seja identificado será cobrado o valor de R$50,00 por pessoa e visita como penalidade. Caso saiba e queira receber alguém orientamos que efetue a reserva para a quantidade exata de pessoas que deseja que entre no quarto e nos avise previamente para inclusão da pessoa como hóspede em vossa reserva, documentos são solicitados para segurança de todos os hospedados em nossa pousada. Ressaltamos ainda que nosso ambiente é familiar e prenuncia o bem-estar e segurança de todos.
 * Para emissão de nota fiscal se faz necessário o envio do endereço completo do solicitante. Caso seja em nome da empresa favor enviar o espelho do CNPJ.
 * Vossa hospedagem contempla roupa de cama (incluindo coberta) e banho (toalha) além de amenities (sabonete/sashê banho)
 * Todos os quartos para família, contém beliche. E caso o ar condicionado de alguma suíte entre em manutenção de forma inesperada, será substituído por ventilador.
-* Caso efetue algum pedido por IFOOD ou similares por gentileza nos avise pelo whatsapp em nome de quem está e a previsão de chegada, bem como o código para que o entregador possa deixa-lo, assim lhe avisamos pelo whatsapp quando chegar e você poderá retirá-lo em nosso balcão da recepção em seu tempo. Caso precise usar o micro-ondas, o mesmo se encontra em nossa ‘cozinheta’ que fica no térreo, lado esquerdo no final do corredor.
+* Caso efetue algum pedido por IFOOD ou similares por gentileza nos avise pelo whatsapp em nome de quem está e a previsão de chegada, bem como o código para que o entregador possa deixa-lo, assim lhe avisamos pelo whatsapp quando chegar e você poderá retirá-lo em nosso balcão da recepção em seu tempo. Caso precise usar o micro-ondas, o mesmo se encontra em nossa 'cozinheta' que fica no térreo, lado esquerdo no final do corredor.
 * O valor de cada água disposta no frigobar é R$ 4,00 e cada refrigerante R$ 5,00. Em caso de perda da chave única disponibilizada no período de vossa hospedagem será cobrado o valor de R$ 50,00 para reposição da mesma.
 * De acordo com as regras internas da Pousada que estão fixadas atrás das portas dos quartos, as tomadas do Ar Condicionado são para uso EXCLUSIVO do Ar Condicionado. Eventuais problemas causados pelo mau uso serão cobrados, portanto solicitamos, a Gentileza, que ao chegar em sua suíte visualize a lâmina de normas de bom convívio que se encontra anexada na parte de dentro da porta principal do quarto. * Atente-se: A tecnologia usada nas fechaduras de nossas portas permite que, uma vez dentro da suíte, para trancá-la, basta apenas encostá-la. Só quem tem a senha eletrônica e/ou a chave física pode abri-la pelo lado de fora ok?! 🤓🤓🤓🤓.
 Informações para utilizar a internet Conectar em REDE: Pousada Bonita
 SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 🤓🤓)            
 
             </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-9')">Copiar</button>
-
-
         </div>
 
-        <h3>Próxima mensagem a ser enviada (Enviar uma após a outra sem hesitar)</h3>
 
         <div class="mensagem-whatsapp">
+            <button onclick="copiarTexto('10')" id="botao-10" class="botao-copiar">Copiar</button>
             <p id="mensagem-10">
                 <strong>Sujestões de delivery para o jantar de hoje:</strong>
                 O atendimento deles se inicia a partir das 18h...
@@ -427,44 +446,154 @@ que mando mensagem pra dar uma apertadinha neles,
 assim eles enviam mais rápido hehe 😝😝 #AgenteEsperaNéRs
 
             </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-10')">Copiar</button>
         </div>
 
-        <h3>Próxima mensagem a ser enviada (Enviar uma após a outra sem hesitar)</h3>
 
-        <p class="legenda">
-            Lembre-se de trocar o número da senha, colocando
-             a senha do quarto do hóspede
-         </p>
+       
         <div class="mensagem-whatsapp">
+            
+            <button onclick="copiarTexto('11')" id="botao-11" class="botao-copiar">Copiar</button>
             <p id="mensagem-11">
                 por precaução, caso necessite pode utilizar também a senha para abrir a porta da frente e de
                 vossa suíte  211567#
 
             </p>
-            <button class="botao-copiar" onclick="copiarTexto('mensagem-11')">Copiar</button>
+        </div>
         </div>
 
         
+                    
+        <h1>Confirmando reservas</h1>
+        <p> Boa tarde, eu escrevo com... e o nome da pessoa</p>
+        <p> espera a pessoa responder, manda o recorte da reserva e manda a seguinte frase</p>
+        <p>Perfeito! Qual horário previsto da vossa chegada, por gentileza.</p>
+        <p>ele respondendo,  vc vai enviar as mensagens abaixo</p>
 
 
+        <div class="grid-mensagens">
+            <!-- Primeira mensagem -->
+            <div class="mensagem-whatsapp">
+                <button onclick="copiarTexto('12')" id="botao-12" class="botao-copiar">Copiar</button>
+                <p id="mensagem-11">
+                    Importante informar que nosso sistema não identifica ou armazena vossos dados automaticamente, portanto solicitamos os dados de acordo com a LGPD.
+
+                    Para que eu adiante os processos de vosso check in, informe por gentileza:
+                    * Nome completo de todos os hospedes;
+                    * CPF de todos os hospedes;
+                    * Data de nascimento de todos os hospedes;
+                    * E-mail (apenas do solicitante).
+                    * Whastapp de todos os hóspedes;
+
+                    Gratos pela compreensão.
+                </p>
+            </div>
+
+            
+                <!-- Primeira mensagem -->
+                <div class="mensagem-whatsapp">
+                    <button onclick="copiarTexto('13')" id="botao-13" class="botao-copiar">Copiar</button>
+                    <p id="mensagem-13">
+                        cabe também salientar que nossa recepção encerra as atividades as 22h
+                         e caso perceba em algum momento que não chegará antes desse horário
+                          nos informe por gentileza, assim verificaremos a disponibilidade do
+                           serviço adicional de Late Check in.
+                    </p>
+                </div>
+                        
+                
+                    <!-- Primeira mensagem -->
+                    <div class="mensagem-whatsapp">
+                        <button onclick="copiarTexto('14')" id="botao-14" class="botao-copiar">Copiar</button>
+                        <p id="mensagem-14">
+                            📍 *Pousada Bonita e Hotel*
+
+                    📌 Localização:
+                    Rua Correia Dias, 368
+                    Vila Mariana - São Paulo/SP
+                    CEP: 04104-001
+                    
+                    🚇 Acesso:
+                    • 3 min a pé do Metrô Paraíso
+                    • Saída mais próxima: Rua Dr. Eduardo Amaro
+                    
+                    📲 Google Maps:
+                    https://maps.app.goo.gl/vy3DQj66FDYVEhfm9
+                    
+                    🚗 Estacionamento mais próximo:
+                    Rua Apeninos, 1070 (100m da pousada)
+                    
+                    ⭐ Pontos de referência:
+                    • Estação Paraíso do Metrô
+                    • Hospital Santa Cruz
+                    • Rua Vergueiro
+                        </p>
+                    </div>
+
+                    
+                        <!-- Primeira mensagem -->
+                        <div class="mensagem-whatsapp">
+                            <button onclick="copiarTexto('15')" id="botao-15" class="botao-copiar">Copiar</button>
+                            <p id="mensagem-15">
+                                
+    
+                        
+*Informações Relevantes*
+Cumprimos rigorosamente os protocolos exigidos pela LGPD.
+*NÃO SERVIMOS CAFÉ DA MANHÃ*
+* Prazo de cancelamento e alterações até 72h antes do horário de check in às 14h no dia da primeira estada conosco para obter o direito a reembolso.
+* *O estacionamento não está incluso no valor da hospedagem.* O que indicamos é coberto e com manobrista é um serviço terceirizado e opcional, com funcionamento 24
+horas. Está localizado a menos de 100 metros da pousada: Rua Apeninos 1070 e, recomendamos que consulte/confira as regras, os horários e o valor da diária direto com o estacionamento. O valor da diária atual é a partir de R$30,00 e, o procedimento para obtenção de desconto é: Primeiro estacione o veículo, lá eles entregarão um canhoto o qual aciona o desconto do convênio mediante o carimbar do ticket na recepção da pousada. Para maiores detalhes por gentileza entrar em ctt diretamente pelo whatsapp 11916331875 KPARK ESTACIONAMENTO.
+* A farmácia mais próxima que temos daqui é a ultrafarma na Rua Apeninos, 1025 a 1 minuto caminhando o whatsapp de atendimento é 11978547780.
+* Não trabalhamos com arrumação diária* Caso necessite, a mesma deve ser solicitada para o terceiro dia de vossa hospedagem junto à recepção.
+* Não trabalhamos com adição de cama extra, colchonetes no chão e nem day use.
+* Amamos os animais, porém não temos estrutura para hospedá-los.
+* Estamos localizados a 3 minutos caminhando da estação de metrô Paraíso. Caso venha de metrô, observe que: A saída mais conveniente que dá acesso à pousada fica sito à Rua Dr. Eduardo Amaro - metrô paraíso.
+* Check in é a partir das 14hrs até as 22h Caso precise chegar em horários diferentes solicite informação sobre.
+* Check out é até as 11 horas em ponto. Caso saia entre 11h01 e 14h00 será cobrado o valor de 50% da diária correspondente a última diária de vossa reserva, após as 14h será cobrado o valor de 100% da mesma. Importante colocar que, caso precise deste tempo e já saiba previamente que sairá dentro deste período estendido ou além, favor nos informar para averiguarmos a disponibilidade do serviço adicional, pois muitas vezes, como estamos lotados, não conseguimos a concessão.
+* Nossa estrutura possui três andares e não possui elevador, nem berços. * Não dispomos de serviços de mensageiros, com isso solicitamos que façam a gestão de vossas bagagens.
+* Lavanderia (whastapp) apenas indicação, para maiores detalhes 11 991236954.
+* Visitantes não são permitidos e caso em qualquer momento seja identificado será cobrado o valor de R$50,00 por pessoa e visita como penalidade. Caso saiba e queira receber alguém orientamos que efetue a reserva para a quantidade exata de pessoas que deseja que entre no quarto e nos avise previamente para inclusão da pessoa como hóspede em vossa reserva, documentos são solicitados para segurança de todos os hospedados em nossa pousada. Ressaltamos ainda que nosso ambiente é familiar e prenuncia o bem-estar e segurança de todos.
+* Para emissão de nota fiscal se faz necessário o envio do endereço completo do solicitante. Caso seja em nome da empresa favor enviar o espelho do CNPJ.
+* Vossa hospedagem contempla roupa de cama (incluindo coberta) e banho (toalha) além de amenities (sabonete/sashê banho)
+* Todos os quartos para família, contém beliche. E caso o ar condicionado de alguma suíte entre em manutenção de forma inesperada, será substituído por ventilador.
+* Caso efetue algum pedido por IFOOD ou similares por gentileza nos avise pelo whatsapp em nome de quem está e a previsão de chegada, bem como o código para que o entregador possa deixa-lo, assim lhe avisamos pelo whatsapp quando chegar e você poderá retirá-lo em nosso balcão da recepção em seu tempo. Caso precise usar o micro-ondas, o mesmo se encontra em nossa 'cozinheta' que fica no térreo, lado esquerdo no final do corredor.
+* O valor de cada água disposta no frigobar é R$ 4,00 e cada refrigerante R$ 5,00. Em caso de perda da chave única disponibilizada no período de vossa hospedagem será cobrado o valor de R$ 50,00 para reposição da mesma.
+* De acordo com as regras internas da Pousada que estão fixadas atrás das portas dos quartos, as tomadas do Ar Condicionado são para uso EXCLUSIVO do Ar Condicionado. Eventuais problemas causados pelo mau uso serão cobrados, portanto solicitamos, a Gentileza, que ao chegar em sua suíte visualize a lâmina de normas de bom convívio que se encontra anexada na parte de dentro da porta principal do quarto. * Atente-se: A tecnologia usada nas fechaduras de nossas portas permite que, uma vez dentro da suíte, para trancá-la, basta apenas encostá-la. Só quem tem a senha eletrônica e/ou a chave física pode abri-la pelo lado de fora ok?! 🤓🤓🤓🤓.
+Informações para utilizar a internet Conectar em REDE: Pousada Bonita
+SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 🤓🤓)
+</p>
+                  
+</div>
+        </div>
+   
+    
+        <h3>
+         
+                Caso não consiga efetuar a cobrança no cartão dp clinete, eviar a seguinte mensagem
+            
+        </h3>
+        
+        <div class="grid-mensagens">
+        <!-- Primeira mensagem -->
+        <div class="mensagem-whatsapp">
+            <button onclick="copiarTexto('15')" id="botao-15" class="botao-copiar">Copiar</button>
+            <p id="mensagem-15">
+
+    boa noite, Informamos que referente a solicitação de hospedagem via Booking, houve uma inconsistência no processo de pagamento.
+    Orientamos que entre em contato diretamente com a plataforma para substituir os dados de pagamento por outro cartão ou ainda oferecemos a opção pix para que seja *garantida* vossa reserva e possamos dar prosseguimento com vossa hospedagem conosco 🤓🤓🤓
+    O que prefere:
+    1- Modificar os dados do cartão de crédito via booking? (caso opte por essa, nos informe após efetuar a modificação por gentileza).
+    2- Os dados pix para efetuação do pagamento?
+    Gratos por vossa atenção e compreensão 😊😊
+    </p>
+    </div>
+    </div>
+
+Importante, sempre que hóspede pegar o ferro de passar e secador, anotar em algum lugar onde está o mesmo para poder cobrar
+depois
 
 
-          
-    </main>
-
-    <script>
-        function copiarTexto(id) {
-            const texto = document.getElementById(id).innerText;
-            navigator.clipboard.writeText(texto).then(() => {
-                const botao = document.querySelector(`button[onclick="copiarTexto('${id}')"]`);
-                const textoOriginal = botao.innerText;
-                botao.innerText = "Copiado!";
-                setTimeout(() => {
-                    botao.innerText = textoOriginal;
-                }, 2000);
-            });
-        }
-    </script>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
