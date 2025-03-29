@@ -1,3 +1,4 @@
+/* Reset e configurações base */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,59 +11,52 @@ body {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Container principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tipografia */
 h1, h2, h3 {
-    margin: 15px 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    clear: both;
     color: #075E54;
 }
 
-.passos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+p {
+    margin-bottom: 15px;
+    line-height: 1.4;
 }
 
-.passos > div {
-    background-color: #DCF8C6;
-    padding: 10px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 200px;
-}
-
-/* Grid para mensagens */
+/* Grid e Cards de Mensagem */
 .grid-mensagens {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 10px;
-    margin: 20px 0;
-    max-width: 100%;
+    gap: 20px;
+    padding: 20px;
+    margin: 40px 0;
+    border-bottom: 1px solid #eee;
 }
 
-/* Estilo das mensagens */
 .mensagem-whatsapp {
     background-color: #DCF8C6;
     border-radius: 8px;
-    padding: 12px;
+    padding: 15px;
     position: relative;
     min-height: 100px;
     max-height: 300px;
     overflow-y: auto;
-    word-wrap: break-word;
-    font-size: 11px;
-    width: 100%;
-    box-sizing: border-box;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.mensagem-whatsapp.mensagem-longa {
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-/* Ajuste do texto dentro das mensagens */
 .mensagem-whatsapp p {
     font-size: 11px;
     line-height: 1.4;
@@ -71,44 +65,7 @@ h1, h2, h3 {
     padding-right: 10px;
 }
 
-.titulo-secao {
-    grid-column: 1 / -1;
-    margin: 20px 0 10px;
-    color: #333;
-    font-size: 18px;
-}
-
-/* Scrollbar styling */
-.mensagem-longa::-webkit-scrollbar {
-    width: 6px;
-}
-
-.mensagem-longa::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.mensagem-longa::-webkit-scrollbar-thumb {
-    background: #25D366;
-    border-radius: 4px;
-}
-
-.mensagem-whatsapp pre {
-    font-size: 13px;
-    font-family: inherit;
-    margin: 0;
-    white-space: pre-line;
-}
-
-.mensagem-whatsapp strong {
-    font-size: 11px;
-}
-
-.texto-pequeno {
-    font-size: 12px;
-    color: #666;
-}
-
+/* Botões */
 .botao-copiar {
     position: absolute;
     top: 5px;
@@ -132,38 +89,14 @@ h1, h2, h3 {
     background-color: #34B7F1;
 }
 
+/* Imagens */
 img {
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
-.legenda {
-    font-size: 0.9em; /* Reduz o tamanho da fonte da legenda */
-    color: #555;
-    margin-bottom: 5px; /* Reduz o espaço abaixo da legenda */
-    text-align: center; /* Centraliza a legenda */
-}
-
-p {
-    margin-bottom: 15px;
-    line-height: 1.4;
-}
-
-#informacoes-relevantes {
-    margin-top: 20px;
-}
-
-.botoes-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-/* Ajuste das imagens */
 .imagem-container {
     max-width: 100%;
     margin: 20px auto;
@@ -171,57 +104,66 @@ p {
 }
 
 .imagem-container img {
-    max-width: 100%;
+    max-width: 30%; /* Reduz o tamanho para 50% da largura do container */
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /* Mantém bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    margin: 20px auto; /* Centraliza a imagem */
 }
 
-.imagem-container {
-    margin: 10px 0; /* Reduz o espaço vertical */
+/* Ajuste específico para imagens dentro de .imagem1 */
+.imagem1 img {
+    max-width: 30%; /* Reduz o tamanho para 50% da largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+}
+
+/* Caso específico da primeira imagem */
+.exemplo-checkin .imagem-container img {
+    max-width: 30%; /* Reduz o tamanho para 30% da largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    transform: rotate(90deg); /* Mantém a rotação */
+}
+
+/* Legendas */
+.legenda {
+    font-size: 0.9em;
+    color: #555;
+    margin: 20px 0;
     text-align: center;
 }
 
-.imagem-container img {
-    width: 100%; /* Garante que a imagem preencha o contêiner */
-    max-width: 500px; /* Define uma largura máxima para evitar imagens muito grandes */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transform: rotate(0deg); /* Garante que a imagem não esteja rotacionada */
+/* Passos */
+.passos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-/* Ajuste específico para a primeira imagem do site */
-.exemplo-checkin .imagem-container img {
-    transform: rotate(-90deg);
-    max-height: 300px;
-    width: auto;
-    margin: 50px auto;
+.passos > div {
+    background-color: #DCF8C6;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
 }
 
-/* Responsividade do grid */
-@media (max-width: 1200px) {
-    .grid-mensagens {
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* Seções */
+section {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
 }
 
-@media (max-width: 900px) {
-    .grid-mensagens {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .grid-mensagens {
-        grid-template-columns: repeat(1, 1fr);
-        
-        .mensagem-whatsapp {
-            margin-left: 0; /* Alinha à esquerda em telas pequenas */
-        }
-    }
-}
-
-/* Responsividade para telas menores */
+/* Responsividade */
 @media screen and (max-width: 1200px) {
     .grid-mensagens {
         grid-template-columns: repeat(3, 1fr);
@@ -246,16 +188,21 @@ p {
     }
 }
 
-/* Container principal */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+/* Estilos do cabeçalho */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-/* Ajuste geral para garantir que nada ultrapasse a tela */
-* {
-    max-width: 100%;
-    box-sizing: border-box;
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
