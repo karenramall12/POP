@@ -389,3 +389,90 @@ nav ul li a:hover {
         padding: 4px 8px; /* Ajusta o tamanho do botão */
     }
 }
+
+/* Responsividade para telas médias */
+@media (max-width: 1200px) {
+    .grid-mensagens {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas médias */
+    }
+
+    .menu-fixo ul {
+        flex-wrap: wrap; /* Permite que o menu quebre linha */
+    }
+
+    .menu-fixo ul li {
+        margin: 5px; /* Ajusta o espaçamento entre os itens */
+    }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 900px) {
+    .grid-mensagens {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+
+    .menu-fixo ul li a {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding: 8px 10px; /* Ajusta o tamanho do botão */
+    }
+
+    .menu-quartos ul li a {
+        font-size: 10px; /* Ajusta o tamanho da fonte do menu de quartos */
+        padding: 6px 8px;
+    }
+
+    .mensagem-whatsapp {
+        max-height: 250px; /* Ajusta a altura máxima das mensagens */
+        margin: 0 auto;
+        width: 95%; /* Garante que as mensagens ocupem quase toda a largura */
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 600px) {
+    .grid-mensagens {
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+    }
+
+    .menu-fixo ul {
+        flex-direction: column; /* Menu em coluna */
+        align-items: center;
+    }
+
+    .menu-fixo ul li {
+        margin: 5px 0; /* Espaçamento vertical entre os itens */
+    }
+
+    .menu-quartos ul {
+        gap: 3px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .menu-quartos ul li a {
+        font-size: 9px; /* Reduz ainda mais o tamanho da fonte */
+        padding: 4px 6px; /* Ajusta o tamanho do botão */
+    }
+
+    .mensagem-whatsapp {
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+
+    .botao-copiar {
+        font-size: 10px; /* Ajusta o tamanho do botão de copiar */
+        padding: 6px 8px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px; /* Ajusta o tamanho dos títulos */
+    }
+}
+
+/* Ajuste para o botão "Voltar ao Topo" em telas menores */
+@media (max-width: 768px) {
+    #voltar-topo {
+        right: 20px; /* Ajusta a posição do botão */
+        bottom: 20px;
+        width: 40px; /* Reduz o tamanho do botão */
+        height: 40px;
+        font-size: 14px;
+    }
+}
