@@ -3,14 +3,15 @@ function copiarTexto(id) {
     navigator.clipboard.writeText(texto)
         .then(() => {
             const botao = document.getElementById(`botao-${id}`);
-            botao.innerText = "Copiado!";
+            botao.textContent = "Copiado!";
+            botao.classList.add("copiado");
             setTimeout(() => {
-                botao.innerText = "Copiar";
+                botao.textContent = "Copiar";
+                botao.classList.remove("copiado");
             }, 2000);
         })
         .catch(err => {
-            console.error('Erro ao copiar texto: ', err);
-            alert('Não foi possível copiar o texto. Tente novamente.');
+            console.error("Erro ao copiar o texto: ", err);
         });
 }
 function scrollToTop() {
