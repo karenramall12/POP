@@ -18,3 +18,19 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function ampliarImagem(imagem) {
+    const overlay = document.getElementById('overlay');
+    const imagemAmpliada = document.getElementById('imagem-ampliada');
+
+    // Define o src da imagem ampliada como o src da imagem clicada
+    imagemAmpliada.src = imagem.src;
+
+    // Exibe o overlay
+    overlay.style.display = 'flex';
+}
+
+function fecharImagem() {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+}
+

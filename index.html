@@ -9,19 +9,22 @@
 <body>
     <header>
         <div class="header-container">
-            <h1 id="pop">POP - Procedimentos Operacionais</h1>
+            <h1 id="pop">Tutorial</h1>
             <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
             <nav class="menu-fixo">
                 <ul>
                     <li><a href="#procedimentos-iniciais">Procedimentos Iniciais</a></li>
                     <li><a href="#orcamentos">Orçamentos</a></li>
                     <li><a href="#reserva">Reservar</a></li>
-                    <li><a href="#procedimentos-checkin">Procedimentos de Check-in</a></li>
+                    <li><a href="#procedimentos-checkin"> Check-in</a></li>
                     <li><a href="#boas-vindas">Boas Vindas</a></li>
                     <li><a href="#confirmacao-reservas">Confirmação de Reservas</a></li>
                     <li><a href="#cartão-inválido">Cartão Inválido</a></li>
                     <li><a href="#late-checkin">Late Check-in</a></li>
                     <li><a href="senhas.html">Senhas dos quartos</a></li>
+                    <li><a href="atualizações">rascunhos</a></li>
+
+                   
                 </ul>
             </nav>
         </div>
@@ -32,7 +35,7 @@
             <h2>O que fazer ao chegar na pousada</h2>
             <div class="passos">
                 <div class="passo-1">
-                    <strong>Passo 1:</strong>
+                    <strong>Passo 1:</strong>1
                     Logar na plataforma Hqbeds com usuario e senha do Téo
                 </div>
                 
@@ -68,8 +71,11 @@
                 <p class="legenda"> Lembre-se de deixar todos os check-in do dia desta forma</p>
 
                 <div class="imagem1">
-                    <img src="imagem/che.jpg" alt="Exemplo de check-in">
+                    <img src="imagem/che.jpg" alt="Exemplo de check-in" onclick="ampliarImagem(this)" />>
                 </div>
+<div id="overlay" onclick="fecharImagem()">
+    <img id="imagem-ampliada" />
+</div>
             
             </div>
         </section>
@@ -236,7 +242,11 @@
             <h3> fazer o orçamento da reserva e enviar o recorte desta maneira:</h3>
             <div class="imagem-container1">
                 <p class="legenda">Lembre-se de apagar o número do quarto.</p>
-                <img src="imagem/WhatsApp Image 2025-03-21 at 15.20.46.jpeg" alt="Exemplo de orçamento">
+                <img src="imagem/WhatsApp Image 2025-03-21 at 15.20.46.jpeg"
+                alt="Exemplo de orçamento" onclick="ampliarImagem(this)" />
+            </div>
+            <div id="overlay" onclick="fecharImagem()">
+                <img id="imagem-ampliada" />
             </div>
             
             <h1>Enviar esta mensagem Junto com o recorte</h1>
@@ -278,7 +288,11 @@
             <p class="legenda">Exemplo de reserva feita aguardando pagamento</p>
             
             <div class="imagem-container1">
-                <img src="imagem/reserva feita aguradando pagamentos.jpg" alt="Reserva feita aguardando pagamento">
+                <img src="imagem/reserva feita aguradando pagamentos.jpg" alt="Reserva feita aguardando pagamento" 
+                onclick="ampliarImagem(this)" /> 
+                <div id="overlay" onclick="fecharImagem()">
+                    <img id="imagem-ampliada" />
+                </div>
             </div>
 
             <h3>Logo abaixo da reserva já feita, enviar esta mensagem junto <br> 
@@ -416,7 +430,10 @@
             </p>
             
             <div class="imagem1">
-                <img src="imagem/regulamento interno.jpeg" alt="">>
+                <img src="imagem/regulamento interno.jpeg" alt=" regulamento interno" 
+                onclick="ampliarImagem(this)" />
+              <div id="overlay" onclick="fecharImagem()">
+                    <img id="imagem-ampliada" />
             </div>
         
             <h3>Mensagens a serem enviadas</h3>
@@ -536,7 +553,10 @@ assim eles enviam mais rápido hehe 😝😝 #AgenteEsperaNéRs
                 
                 <div class="imagem-container">
                     <p class="legenda">O recorte fica desta maneira </p>
-                    <img src="imagem/conreserva.jpg" alt="Reserva feita aguardando pagamento">
+                    <img src="imagem/conreserva.jpg" alt="Reserva feita aguardando pagamento" 
+                    onclick="ampliarImagem(this)" />
+                    <div id="overlay" onclick="fecharImagem()">
+                        <img id="imagem-ampliada" />
                 </div>
     
                 <div class="passos">
@@ -759,8 +779,8 @@ SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
 
 
 <p class="legenda">
-    <strong>Passos a serem seguidos para preparar o Late check-in by your self</strong></p>
-    
+  ca  <s,trong>Passos a serem seguidos para preparar o Late check-in by your self</strong></p>
+  bus  
 
 <div class="passos">
         <div class="passo-1">
@@ -801,8 +821,8 @@ SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
     <h3>Coodernadas para o Late check-in</h3>
 
     <p class="legenda">
-        <strong>Lembre-se de trocar o número do quarto e a senha correspondente</strong>
-    </p>
+  ma      <sgtrong>Lembre-se de trocar o número do quarto e a senha correspondente</strong>
+    </p>a i
 
     <div class="mensagem-whatsapp">
         <button onclick="copiarTexto('20')" id="botao-20" class="botao-copiar">Copiar</button>
