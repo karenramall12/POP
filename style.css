@@ -7,6 +7,7 @@
     max-width: 100%;
 }
 
+
 body {
     padding: 20px;
     max-width: 1000px;
@@ -179,7 +180,7 @@ img {
 /* Legendas */
 .legenda {
     font-size: 0.9em;
-    color: #555;
+    color: #ba1616;
     margin: 20px 0;
     text-align: center;
 }
@@ -439,7 +440,6 @@ nav ul li a:hover {
     background-color: #25D366; /* Cor ao passar o mouse */
 }
 
-
 /* Estilo para o menu de quartos */
 .menu-quartos {
     background-color: #144d0613; /* Cor de fundo */
@@ -573,4 +573,19 @@ nav ul li a:hover {
         height: 40px;
         font-size: 14px;
     }
+}
+
+/* Campo de busca */
+.campo-busca {
+    margin: 20px;
+    text-align: center;
+}
+
+.campo-busca input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
