@@ -10,6 +10,7 @@
     <header>
         <div class="header-container">
             <h1 id="pop">POP - Procedimentos Operacionais</h1>
+            <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
             <nav class="menu-fixo">
                 <ul>
                     <li><a href="#procedimentos-iniciais">Procedimentos Iniciais</a></li>
@@ -855,6 +856,12 @@ SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
     // Função para rolar até o topo
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu-fixo');
+        menu.classList.toggle('active');
     }
 </script>
 </body>

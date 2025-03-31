@@ -204,7 +204,7 @@ img {
 section {
     scroll-margin-top: 80px; /* Espaço para que o título não fique escondido atrás do menu */
     padding: 20px; /* Espaçamento interno para as seções */
-    border-top: 3px solid #34b7f1; /* Linha no topo de cada seção */
+    border-top: 3px solid #075e54; /* Linha no topo de cada seção */
     margin-bottom: 40px; /* Espaçamento entre as seções */
     background-color: #f9f9f9; /* Fundo claro para destacar a seção */
     border-radius: 8px; /* Bordas arredondadas */
@@ -217,6 +217,51 @@ section h2 {
     font-size: 24px; /* Tamanho do título */
     margin-bottom: 10px; /* Espaçamento abaixo do título */
     text-align: center; /* Centraliza o título */
+}
+
+/* Estilo do botão hambúrguer */
+.menu-toggle {
+    display: none; /* Esconde o botão em telas grandes */
+    background-color: #075e54;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+/* Estilo do menu fixo */
+.menu-fixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-fixo ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-fixo ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #075e54;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-fixo ul li a:hover {
+    background-color: #25d366;
 }
 
 /* Responsividade */
@@ -241,6 +286,48 @@ section h2 {
         max-height: 250px;
         margin: 0 auto;
         width: 95%;
+    }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão hambúrguer */
+    }
+
+    .menu-fixo {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #075e54;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .menu-fixo.active {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    .menu-fixo ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-fixo ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #voltar-topo {
+        right: 20px; /* Ajusta a posição do botão */
+        bottom: 20px;
+        width: 40px; /* Reduz o tamanho do botão */
+        height: 40px;
+        font-size: 14px;
     }
 }
 
