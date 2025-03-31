@@ -8,9 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>POP - Procedimentos Operacionais</h1>
+        <div class="header-container">
+            <h1 id="pop">POP - Procedimentos Operacionais</h1>
+            <nav class="menu-fixo">
+                <ul>
+                    <li><a href="#procedimentos-iniciais">Procedimentos Iniciais</a></li>
+                    <li><a href="#orcamentos">Orçamentos</a></li>
+                    <li><a href="#reserva">Reservar</a></li>
+                    <li><a href="#procedimentos-checkin">Procedimentos de Check-in</a></li>
+                    <li><a href="#boas-vindas">Boas Vindas</a></li>
+                    <li><a href="#confirmacao-reservas">Confirmação de Reservas</a></li>
+                    <li><a href="#cartão-inválido">Cartão Inválido</a></li>
+                    <li><a href="#late-checkin">Late Check-in</a></li>
+                    <li><a href="senhas.html">Senhas dos quartos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
     <main>
         <!-- Seção: Procedimentos Iniciais -->
         <section id="procedimentos-iniciais">
@@ -61,7 +75,7 @@
 
         <!-- Seção: Orçamentos -->
         <section id="orcamentos">
-            <h1>Hóspede quer fazer um orçamento</h1>
+            <h2>Hóspede quer fazer um orçamento</h2>
 
             <div class="grid-mensagens">
                 <!-- Primeira mensagem -->
@@ -184,16 +198,42 @@
                         • Rua Vergueiro
                     </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- Seção: Check-in -->
-        <section id="checkin">
+                     <!-- Quarta mensagem -->
+                     <div class="mensagem-whatsapp">
+                        <button onclick="copiarTexto('4')" id="botao-4" class="botao-copiar">Copiar</button>
+                        <p id="mensagem-4">
+                            *FORMAS DE PAGAMENTO*
+    
+                            Não trabalhamos com link de pagamento, tão pouco dividimos valores em cartão de crédito e não faturamos para empresas
+                            CHAVE PIX: CNPJ: 14.313.731/0001-00
+                            DADOS BANCÁRIOS:
+                            Banco Santander - nº 033
+                            Agência 4790 - São Paulo
+                            Conta corrente - 130036661
+                            Favorecido: Pousada Bonita Ltda. ME
+                            CNPJ: 14.313.731/0001-00
+                            Como garantia da sua reserva solicitamos o pagamento antecipado em 100% irrevogavelmente, após a transferência por gentileza enviar o comprovante à este canal
+                            Atenção! 🚨🚨
+                            Precisa ser informado com no mínimo 72h antes de seu check in
+                            Caso queira alterar ou cancelar com direito ao reembolso total. Combinado?!
+                            Após o envio do comprovante bancário.
+                            Encaminharemos o mesmo para o departamento administrativo que confirmará o recebimento dentro do horário comercial.
+                            Tão logo nos sinalizem, confirmaremos a reserva através deste canal 🤓🤓
+                            Gratos pela compreensão
+                        </p>
+                    </div>
+               
+            </div>
+        
+
+       
+        
             <h1> Cliente forneceu todos os dados necessários, <br>
                 siga com o orçamento</h1>
             <p></p>
             <h3> fazer o orçamento da reserva e enviar o recorte desta maneira:</h3>
-            <div class="imagem-container">
+            <div class="imagem-container1">
                 <p class="legenda">Lembre-se de apagar o número do quarto.</p>
                 <img src="imagem/WhatsApp Image 2025-03-21 at 15.20.46.jpeg" alt="Exemplo de orçamento">
             </div>
@@ -227,37 +267,16 @@
                         * Horário previsto para vossa chegada.
                     </p>
                 </div>
-
-                <!-- Quarta mensagem -->
-                <div class="mensagem-whatsapp">
-                    <button onclick="copiarTexto('4')" id="botao-4" class="botao-copiar">Copiar</button>
-                    <p id="mensagem-4">
-                        *FORMAS DE PAGAMENTO*
-
-                        Não trabalhamos com link de pagamento, tão pouco dividimos valores em cartão de crédito e não faturamos para empresas
-                        CHAVE PIX: CNPJ: 14.313.731/0001-00
-                        DADOS BANCÁRIOS:
-                        Banco Santander - nº 033
-                        Agência 4790 - São Paulo
-                        Conta corrente - 130036661
-                        Favorecido: Pousada Bonita Ltda. ME
-                        CNPJ: 14.313.731/0001-00
-                        Como garantia da sua reserva solicitamos o pagamento antecipado em 100% irrevogavelmente, após a transferência por gentileza enviar o comprovante à este canal
-                        Atenção! 🚨🚨
-                        Precisa ser informado com no mínimo 72h antes de seu check in
-                        Caso queira alterar ou cancelar com direito ao reembolso total. Combinado?!
-                        Após o envio do comprovante bancário.
-                        Encaminharemos o mesmo para o departamento administrativo que confirmará o recebimento dentro do horário comercial.
-                        Tão logo nos sinalizem, confirmaremos a reserva através deste canal 🤓🤓
-                        Gratos pela compreensão
-                    </p>
-                </div>
             </div>
-            
+        </section>
+           
+            <section id="reserva">
+                <h2>Cliente quer fazer a reserva</h2>
             <h3>Assim que cliente enviar TODOS os dados, fazer a reserva e enviar o recorte desta maneira:</h3>
             
-            <div class="imagem-container">
-                <p class="legenda">Exemplo de reserva feita aguardando pagamento</p>
+            <p class="legenda">Exemplo de reserva feita aguardando pagamento</p>
+            
+            <div class="imagem-container1">
                 <img src="imagem/reserva feita aguradando pagamentos.jpg" alt="Reserva feita aguardando pagamento">
             </div>
 
@@ -330,13 +349,14 @@
                 </p>
             </div>
         </section>
+    </section>
 
         <!-- Seção: Procedimentos de Check-in -->
         <section id="procedimentos-checkin">
-            <h1>Hóspede chegou na pousada para o check-in</h1>
+            <h2> Check-in</h2>
 
-            <h2>Passos a serem seguidos quando o hóspede 
-            chegar na pousada</h2>
+            <h3>Passos a serem seguidos quando o hóspede 
+            chegar na pousada para o check-in</h3>
             <div class="passos">
                 <div class="passo-1">
                     <strong>Passo 1:</strong>
@@ -372,7 +392,11 @@
 
                 </div>      
             </div>
+            </section>
 
+            <section id="boas-vindas">
+                <h2>Boas vindas aos Hóspedes</h2>
+           
             <h3>Assim que finalizar o check-in 
                 seguir estes passos Hóspede</h3>
             <div class="passos">
@@ -399,6 +423,7 @@
                 Lembre-se de trocar o número da senha, colocando
                 a senha do quarto do hóspede
             </p>
+
             <div class="grid-mensagens">
                 <!-- Mensagem 9 -->
                 <div class="mensagem-whatsapp">
@@ -483,10 +508,13 @@ assim eles enviam mais rápido hehe 😝😝 #AgenteEsperaNéRs
             </p>
         </div>
         </div>
+    </section>
 
-        
-        <h2>Confirmando reservas
-           </h2>
+    <section id="confirmacao-reservas">
+        <h2>Confirmação de Reservas</h2>
+
+        <h1>As confirmações devem ser feitas 72 horas antes da entrada do hóspede</h1>
+       
             <div class="passos">
                 <div class="passo-1">
                     <strong>Passo 1:</strong>
@@ -505,16 +533,19 @@ assim eles enviam mais rápido hehe 😝😝 #AgenteEsperaNéRs
                     <img src="imagem/conreserva.jpg" alt="Reserva feita aguardando pagamento">
                 </div>
     
-              
+                <div class="passos">
+                    <div class="passo-3">
+                        <strong>Passo 1:</strong>
+                        Aguarde o hóspede responder.
+                    </div>
+                    
+                    <div class="passo-4">
+                        <strong>Passo 2:</strong>
+                        ele respondendo,  vc vai enviar as mensagens abaixo                    </div>
+                    </div>
+                    </div>
 
-                         
-        <h1>Confirmando reservas</h1>
-        <p> Boa tarde, eu escrevo com... e o nome da pessoa</p>
-        <p> espera a pessoa responder, manda o recorte da reserva e manda a seguinte frase</p>
-        <p>Perfeito! Qual horário previsto da vossa chegada, por gentileza.</p>
-        <p>ele respondendo,  vc vai enviar as mensagens abaixo</p>
-
-
+                        
 
         <div class="grid-mensagens">
         <div class="mensagem-whatsapp">
@@ -583,6 +614,7 @@ SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
                         Confirmamos o pagamento e a reserva. 🤓🙏Gratidão por nos escolher.
                     </p>
                 </div>
+
                     
 
                 <!-- Primeira mensagem -->
@@ -625,19 +657,20 @@ SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
                         </p>
                     </div>
                    </div>
+                </section>
                     
                     
              
        
    
     
-        <h3>
-         
-         Caso não consiga efetuar a cobrança no cartão do cliente, enviar a seguinte mensagem
+       <section id="cartão-inválido" >
+        <h2>Cartão inválido</h2>
+      
+         <p class="legenda">
+         Caso não consiga efetuar a cobrança no cartão do cliente,
+          enviar a seguinte mensagem</p>
             
-        </h3>
-        
-        
         <!-- Primeira mensagem -->
         <div class="mensagem-whatsapp">
             <button onclick="copiarTexto('17')" id="botao-17" class="botao-copiar">Copiar</button>
@@ -651,14 +684,9 @@ SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
     Gratos por vossa atenção e compreensão 😊😊
     </p>
     </div>
+</section>
     
 
-Importante, sempre que hóspede pegar o ferro de passar e secador, anotar em algum lugar onde está o mesmo para poder cobrar
-depois
-O quarto 204 não tem ar
-o quarto 235 não pega internet
-o quarto 212 nao clicar no touth para abir a porta abrir
-não faz o barulho de bip, mas funciona
 
 
 <p class="legenda">
@@ -674,17 +702,37 @@ não faz o barulho de bip, mas funciona
 </div>
 
 
+<section id="late-checkin">
+<h2> (Late check-in) </h2>
 
-<h3> (Late check-in) </h3>
+<P class="legenda">
+    hóspede vai chegar depois das 22:00<br>
+    <p><strong>CASO O HÓSPEDE FOR CHEGAR NO MESMO DIA, ENVIAR ESTA MENSAGEM</strong></p>
+    
+
+    
+
+<div class="mensagem-whatsapp">
+   <button onclick="copiarTexto('19')" id="botao-19" class="botao-copiar">Copiar</button>
+   <p id="mensagem-19">
+       Cabe salientar que nossa recepção encerra as atividades as 22h e retorna as 7h da manhã do 
+       dia seguinte, portanto diante do comunicado da chegada prevista dentro da grade de não 
+       funcionamento convencional de nossa recepção, temos: 
+      
+       Check in by your self / Passamos as coordenadas para que seja possível a entrada na 
+       pousada e no quarto com base em senha eletrônica sem plantonista (ação sem custo 
+       adicional).
+   
+   </p>
+   </div>
 
 <p class="legenda">
-     hóspede vai chegar depois das 22:00, enviar a seguinte mensagem <br>
+     Caso o plantonista do dia for Téo ou Karen, verificar <br>
+      se poder acionar a opção (A) com os mesmos <br></p>
 
-     <strong> IMPORTANTE <br>
-        A opção (A) é somente com autorização do Téo ou quando ele estiver na pousada,
-     neste caso, só será é enviado a opção de entrada com sem sem plantonista (B) </strong>
     
-</p>
+    
+
 <div class="mensagem-whatsapp">
     <button onclick="copiarTexto('19')" id="botao-19" class="botao-copiar">Copiar</button>
     <p id="mensagem-19">
@@ -700,11 +748,114 @@ não faz o barulho de bip, mas funciona
     </p>
 </div>
 </div>
+    <h1> IMPORTANTE <br>
+    Os quartos <strong>202,232 e 211</strong> não é possivel fazer Late check-in</h1>
 
 
+<p class="legenda">
+    <strong>Passos a serem seguidos para preparar o Late check-in by your self</strong></p>
+    
 
+<div class="passos">
+        <div class="passo-1">
+            <strong>Passo 1:</strong>
+           Ás 16:00 enviar as coodernadas para o hóspede de como <br>
+           ele vai entrar em seu quarto. <strong>logo abaixo 
+            seguem as mensagens a serem enviadas.
+           </strong>
+        </div>
+        
+        <div class="passo-2">
+            <strong>Passo 2:</strong>
+           Ás 21:30 ir ao quarto do hóspede, deixar as fichas de check-in, o cartão do <br>
+            quarto e uma caneta.
+        </div>
+        
+        <div class="passo-3">
+            <strong>Passo 3:</strong>
+            Verificar se Hóspede recebeu as coordenadas em seu whastapp, <br>
+            Pois pode acontecer do hóspede estar sem bateria ou algo assim. <br>
+            
+            
+        </div>
 
+        <div class="passo-4">
+            <strong>Passo 4:</strong>
+            verificar se esta pago ou não
+            se não estiver, perguntar a forma de pagamento
+            <strong>importante, fazer a cobrança antes de 
+                fazer o check-in no sistema</strong>
+        </div>
+       
+            <p class="legenda">
+                <strong>Caso perceba que o hóspede não recebeu as mensagens, entrar em contato 
+                    com Karen ou Téo para verificar o que fazer.</strong></p>
+    </div>
+
+    <h3>Coodernadas para o Late check-in</h3>
+
+    <p class="legenda">
+        <strong>Lembre-se de trocar o número do quarto e a senha correspondente</strong>
+    </p>
+
+    <div class="mensagem-whatsapp">
+        <button onclick="copiarTexto('20')" id="botao-20" class="botao-copiar">Copiar</button>
+        <p id="mensagem-20">
+            Orientamos que tome cuidado com seus pertences e preste atenção na rua na hora de vossa chegada 
+            para vossa segurança. 
+            Envio abaixo o vídeo explicativo para acesso com senha na Pousada Bonita. 
+            Lembramos que a senha é pessoal e intransferível, válido somente para essa hospedagem e para o seu 
+            apto. 
+            Após a hospedagem será automaticamente CANCELADA. 
+            Apto:<strong> *231* fica no *3° Andar* </strong>
+            Senha da porta principal e do quarto: <strong>*231288#* </strong>
+            → A tecla da fechadura é touch screen, basta encostar para ativar e digitar a senha; 
+            → Caso Erre a Senha, é só clicar em asterisco (*) e reiniciar o processo. 
+            → Caso ao tentar abrir movimentando a maçaneta da porta principal para baixo e verificar uma trava 
+            de segurança, basta apenas efetuar o movimento para cima e assim ela se abrirá. 
+        </p>
+    </div>
+            <h3>Enviar o vídeo que está no PC explicando como que entra no quarto</h3>
+            <p class="legenda">
+                <strong>Lembre-se de trocar o número do quarto</strong>
+            </p>
+
+            <div class="mensagem-whatsapp">
+                <button onclick="copiarTexto('21')" id="botao-21" class="botao-copiar">Copiar</button>
+                <p id="mensagem-21">
+                    Importante salientar que este vídeo é apenas um exemplo com a suíte 202 
+                    reforçamos que a vossa suíte é a <strong>*204*</strong> ok 
+                    Solicitamos a gentileza de preencher a ficha de hospedes que já se encontra no quarto e nos entregar 
+                    junto à recepção amanhã 
+                    �
+                    �
+                     
+                    O cartão o qual abre a porta do Sr., bem como a porta principal da pousada já se encontra dentro do 
+                    quarto sobre a escrivaninha junto com a ficha cadastral. 
+                    Informações para utilizar a internet:  
+                    Conectar em REDE: Pousada Bonita  
+                    SENHA DO WIFI: LavateriaParaiso (favor considerar as letras L & P MAIUSCULAS ok 
+                    �
+                    �
+                     ) 
+                </p>
+            </div>
+        </section>
+  
+            Importante, sempre que hóspede pegar o ferro de passar e secador, anotar em algum lugar onde está o mesmo para poder cobrar
+            depois
+            O quarto 204 não tem ar
+            o quarto 235 não pega internet
+            o quarto 212 nao clicar no touth para abir a porta abrir
+            não faz o barulho de bip, mas funciona
+            
 </main>
-<script src="script.js"></script>
+<button id="voltar-topo" onclick="scrollToTop()">⬆</button>
+<script>
+    // Função para rolar até o topo
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </body>
 </html>

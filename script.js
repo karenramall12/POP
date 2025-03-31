@@ -13,3 +13,7 @@ function copiarTexto(id) {
             alert('Não foi possível copiar o texto. Tente novamente.');
         });
 }
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
